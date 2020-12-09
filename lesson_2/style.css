@@ -12,7 +12,7 @@ a {
     padding-right: calc(50% - 570px);
 }
 
-.nav {
+nav {
     height: 75px;
     background: #222222;
     display: flex;
@@ -30,6 +30,7 @@ a {
 }
 
 .header {
+    position: relative;
     background: rgba(113, 103, 105, 0.08);
     padding-left: calc(50% - 800px);
     padding-right: calc(50% - 800px);
@@ -42,6 +43,7 @@ a {
 
 .header_image {
     width: 100%;
+    height: 100%;
 }
 
 .header_name {
@@ -68,6 +70,26 @@ h1 {
     font-size: 32px;
     line-height: 38px;
     color: #222222;
+}
+
+.header_menu {
+    position: absolute;
+    width: 232px;
+    height: 100%;
+    left: 1136px;
+    background: #FFF;
+    display: none;
+}
+.header:hover .header_img {
+    filter: brightness(50%);
+}
+
+.header:hover .header_name {
+    filter: brightness(50%);
+}
+
+.header:hover .header_menu {
+    display: flex;
 }
 
 strong {
@@ -252,6 +274,11 @@ strong {
     color: #F26376;
 }
 
+.offer_button:hover {
+    color: #fff;
+    background: #F16D7F;
+}
+
 .advantages {
     height: 341px;
     background: #222224;
@@ -324,7 +351,7 @@ strong {
     padding-top: 30px;
 }
 
-.footer {
+footer {
     height: 79px;
     background: #222224;
     display: flex;
@@ -361,6 +388,10 @@ strong {
 .filter_menu {
     height: 133px;
     position: relative;
+}
+
+.filter_catalog {
+    background: #FFF;
 }
 
 .filter_catalog {
