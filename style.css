@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 a {
@@ -359,6 +360,27 @@ footer {
     align-items: center;
 }
 
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon_link {
+    display: block;
+    margin-right: 7px;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    line-height: 32px;
+}
+
+.icon_link:hover {
+    background-color: #F16D7F;
+    color: #fff;
+}
+
 .header_catalog {
     height: 148px;
     background: #F8F3F4;
@@ -377,10 +399,12 @@ footer {
 }
 
 .header_cat_menu {
-    width: 209px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
+}
+
+.header_cat_link {
     font-family: Lato;
     font-style: normal;
     font-weight: 300;
@@ -389,21 +413,50 @@ footer {
     color: #636363;
 }
 
+.header_cat_link:not(:last-child)::after {
+    content: "/";
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.header_cat_link:hover {
+    color: #F16D7F;
+}
+
 .filter_menu {
     height: 133px;
     position: relative;
 }
 
-.filter_catalog {
-    background: #FFF;
+.filter_body {
+    width: 360px;
+    position: absolute;
+    margin-top: 39px;
+    padding-top: 13px; 
+    padding-left: 16px;   
 }
 
 .filter_catalog {
-    position: absolute;
-    padding-top: 51px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.filter_descr {
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
+}
+
+.filter_name {
+    display: none;
+    flex-direction: column;    
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    z-index: 1;
+}
+
+.filter_catalog:hover .filter_name {
+    display: flex;
 }
 
 .filter_put {
@@ -424,6 +477,7 @@ footer {
 }
 
 .filter_info {
+    position: relative;
     display: flex;
 }
 
@@ -441,9 +495,18 @@ footer {
     line-height: 17px;
 }
 
-.filter_list {
-    list-style: none;
-    text-align: center;
+.filter_size {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 8px 30px 8px 8px;
+    position: absolute;
+    top: 24px;
+    left: 28px;
+    z-index: 1;
 }
 
 details summary::-webkit-details-marker {
@@ -453,4 +516,29 @@ details summary::-webkit-details-marker {
 details summary:after {
     content: url(icons/vector.svg);
     margin-left: 10px;
-  }
+}
+
+.slide {
+    background: #F7F7F7;
+}
+
+.slide_img {
+    display: flex;
+    justify-content: center;
+}
+
+.collection {    
+    height: 535px;
+    position: relative;
+    margin-bottom: 129px;
+}
+
+.women_collection {
+    height: 600px;
+    width: 1140px;
+    background: #FFF;
+    border: 1px solid #EAEAEA;    
+    position: absolute;
+    top: -65px;
+    z-index: 1;
+}

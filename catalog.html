@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/15378dda61.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="center">
         <div class="nav_left">
-            <a href="" class="nav_logo"><img src="icons/logo.svg" alt=""></a>
-            <a href="" class="nav_search"><img src="icons/search.svg" alt=""></a>
+            <a href="index.html" class="nav_logo"><img src="icons/logo.svg" alt=""></a>
+            <a href="#" class="nav_search"><img src="icons/search.svg" alt=""></a>
         </div>
         <div class="nav_right">
-            <a href="" class="nav_menu"><img src="icons/menu.svg" alt=""></a>
-            <a href="" class="nav_acc"><img src="icons/account.svg" alt=""></a>
-            <a href="" class="nav_cart"><img src="icons/cart.svg" alt=""></a>
+            <a href="catalog.html" class="nav_menu"><img src="icons/menu.svg" alt=""></a>
+            <a href="#" class="nav_acc"><img src="icons/account.svg" alt=""></a>
+            <a href="#" class="nav_cart"><img src="icons/cart.svg" alt=""></a>
         </div>
     </nav>
 
@@ -24,21 +25,44 @@
             <p>NEW ARRIVALS</p>
         </div>
         <div class="header_cat_menu">
-            <p> <a href="index.html">HOME</a></p>  / 
-            <p>MEN</p>  / 
-            <p ><strong>NEW ARRIVALS</strong></p>
+            <a href="index.html" class="header_cat_link">HOME</a> 
+            <a href="#" class="header_cat_link">MEN</a> 
+            <a href="#" class="header_cat_link"><strong>NEW ARRIVALS</strong></a>
         </div>
     </header>
 
     <section class="filter_menu center">
         <div class="filter_body">
             <div class="filter_catalog">
-                <p class="filter_put">FILTER</p> 
-                <img src="icons/filter.svg" alt="filter">
-            </div>
-            <div class="filter_name">
-                
-            </div>
+                <div class="filter_descr">
+                    <p class="filter_put">FILTER</p> 
+                    <img src="icons/filter.svg" alt="filter">
+                </div>
+                <div class="filter_name">
+                    <details open>
+                        <summary>CATEGORY</summary>
+                        <ul class="filter__ul">
+                            <li><a href="#">Accesories</a></li>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Denim</a></li>
+                            <li><a href="#">Hoodies & Sweatshirts</a></li>
+                            <li><a href="#">Jackets & Coats</a></li>
+                            <li><a href="#">Polos</a></li>
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Sweaters & Knits</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Tanks</a></li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>BRAND</summary>
+                    </details>
+                    <details>
+                        <summary>DESIGNER</summary>
+                    </details>
+                </div>
+            </div>            
         </div>        
 
         <div class="filter_choose">
@@ -47,12 +71,12 @@
             </details>
             <details class="filter_info filter_info_size">
                 <summary class="filter_text">SIZE</summary>
-                <ul class="filter_list">
-                    <li>XS</li>
-                    <li>S</li>
-                    <li>M</li>
-                    <li>L</li>
-                </ul>
+                    <div class="filter_size">
+                        <label><input type="checkbox">XS</label>
+                        <label><input type="checkbox">S</label>
+                        <label><input type="checkbox">M</label>
+                        <label><input type="checkbox">L</label>
+                    </div>                    
             </details>
             <details class="filter_info">
                 <summary class="filter_text">PRICE</summary>
@@ -208,10 +232,18 @@
             &copy; 2021 Brand All Rights Reserved.
         </div>
         <div class="icons">
-            <img src="" alt="icon">
-            <img src="" alt="icon">
-            <img src="" alt="icon">
-            <img src="" alt="icon">
+            <a href="#" class="icon_link">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="icon_link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="icon_link">
+                <i class="fab fa-pinterest-p"></i>
+            </a>
+            <a href="#" class="icon_link">
+                <i class="fab fa-twitter"></i>
+            </a>
         </div>
     </footer>
     
