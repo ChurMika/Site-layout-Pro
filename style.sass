@@ -1,0 +1,636 @@
+*
+  margin: 0
+  padding: 0
+  list-style-type: none
+
+a
+  text-decoration: none
+
+.center
+  padding-left: calc(50% - 570px)
+  padding-right: calc(50% - 570px)
+
+nav
+  height: 75px
+  background: #222222
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.nav_search
+  padding-left: 41px
+
+.nav_acc
+  padding-right: 33px
+  padding-left: 34px
+
+.header
+  position: relative
+  background: rgba(113, 103, 105, 0.08)
+  padding-left: calc(50% - 800px)
+  padding-right: calc(50% - 800px)
+  display: flex
+
+.header_img
+  width: 50%
+
+.header_image
+  width: 100%
+  height: 100%
+
+.header_name
+  width: 50%
+  background: #F1E4E6
+  display: flex
+  align-items: center
+  padding-left: 64px
+
+h1
+  font-family: Lato
+  font-style: normal
+  font-weight: 900
+  font-size: 48px
+  line-height: 58px
+  color: #222222
+
+.header_text
+  font-family: Lato
+  font-style: normal
+  font-weight: 700
+  font-size: 32px
+  line-height: 38px
+  color: #222222
+
+.header_menu
+  position: absolute
+  width: 232px
+  height: 100%
+  left: 1136px
+  background: #FFF
+  display: none
+
+.header:hover
+  .header_img, .header_name
+    filter: brightness(50%)
+
+  .header_menu
+    display: flex
+
+strong
+  color: #F16D7F
+
+.catalog
+  display: flex
+  justify-content: space-between
+  padding-top: 64px
+
+.catalog__item
+  position: relative
+
+  &:not(:last-child)
+    margin-right: 30px
+
+.catalog__content
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.catalog__img
+  width: 100%
+
+.catalog__text
+  font-family: Lato
+  font-style: normal
+  font-weight: 400
+  font-size: 16px
+  line-height: 19px
+  color: #FFFFFF
+
+.catalog__heading
+  font-family: Lato
+  font-style: normal
+  font-weight: 700
+  font-size: 24px
+  line-height: 29px
+  color: #F16D7F
+
+.catalog-big
+  margin-top: 30px
+  position: relative
+
+.catalog-big__img
+  width: 100%
+
+.offer_heading
+  padding-top: 97px
+  font-family: Lato
+  font-style: normal
+  font-weight: 400
+  font-size: 30px
+  line-height: 36px
+  color: #222222
+  text-align: center
+
+.offer_title
+  padding-top: 6px
+  padding-bottom: 48px
+  font-family: Lato
+  font-style: normal
+  font-weight: 400
+  font-size: 14px
+  line-height: 17px
+  color: #9F9F9F
+  text-align: center
+
+.offer_line
+  display: flex
+  justify-content: space-between
+  padding-bottom: 30px
+
+.offer_bottom_line
+  padding-top: 30px
+  padding-bottom: 48px
+
+.offer_item
+  width: 360px
+  background: #F8F8F8
+  position: relative
+
+  &:hover
+    .offer_img
+      filter: brightness(50%)
+
+    .offer_add
+      display: flex
+
+.offer_add
+  position: absolute
+  top: 188px
+  left: 111px
+  width: 139px
+  height: 44px
+  border: 1px solid white
+  align-items: center
+  justify-content: center
+  display: none
+  font-size: 14px
+  line-height: 17px
+  color: #FFFFFF
+
+.offer_cart
+  padding-right: 11px
+
+.offer_descr
+  padding-top: 25px
+  padding-left: 18px
+
+.offer_name
+  font-family: Lato
+  font-style: normal
+  font-weight: 400
+  font-size: 13px
+  line-height: 16px
+  color: #000000
+
+.offer_text
+  padding-top: 13px
+  padding-bottom: 18px
+  font-family: Lato
+  font-style: normal
+  font-weight: 300
+  font-size: 14px
+  line-height: 17px
+  color: #5D5D5D
+
+.offer_price
+  padding-bottom: 20px
+  font-family: Lato
+  font-style: normal
+  font-weight: 400
+  font-size: 16px
+  line-height: 19px
+  color: #F16D7F
+
+.offer_btn
+  padding-top: 18px
+  padding-bottom: 96px
+  text-align: center
+
+.offer_button
+  width: 211px
+  height: 47px
+  border: 1px solid #FF6A6A
+  background: #fff
+  font-family: Lato
+  font-style: normal
+  font-weight: 400
+  font-size: 16px
+  line-height: 19px
+  color: #F26376
+
+  &:hover
+    color: #fff
+    background: #F16D7F
+
+.advantages
+  height: 341px
+  background: #222224
+  display: flex
+  justify-content: space-around
+
+.adv_item
+  padding-top: 103px
+  width: 360px
+  text-align: center
+
+.adv_descr
+  padding-top: 29px
+
+.adv_sales
+  padding-top: 19px
+
+.adv_title
+  padding-bottom: 16px
+  font-family: Lato
+  font-style: normal
+  font-weight: 400
+  font-size: 20px
+  line-height: 24px
+  color: #FBFBFB
+
+.adv_text
+  font-family: Lato
+  font-style: normal
+  font-weight: 300
+  font-size: 14px
+  line-height: 17px
+  text-align: center
+  color: #FBFBFB
+
+.subscribe
+  height: 448px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background: url(img/subscribe.png) no-repeat
+
+.sub_quote
+  width: 360px
+  text-align: center
+
+.sub_descr
+  padding-top: 30px
+
+.sub_email
+  width: 360px
+  text-align: center
+
+.sub_head
+  font-weight: 400
+  font-size: 18px
+
+.sub_form
+  padding-top: 30px
+
+footer
+  height: 79px
+  background: #222224
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.icons
+  display: flex
+  align-items: center
+
+.icon_link
+  display: block
+  margin-right: 7px
+  width: 32px
+  height: 32px
+  background-color: #fff
+  color: #000
+  text-align: center
+  line-height: 32px
+
+  &:hover
+    background-color: #F16D7F
+    color: #fff
+
+.header_catalog
+  height: 148px
+  background: #F8F3F4
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.header_cat_logo
+  font-family: Lato
+  font-style: normal
+  font-weight: 400
+  font-size: 24px
+  line-height: 29px
+  color: #F16D7F
+
+.header_cat_menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.header_cat_link
+  font-family: Lato
+  font-style: normal
+  font-weight: 300
+  font-size: 14px
+  line-height: 17px
+  color: #636363
+
+  &:not(:last-child)::after
+    content: "/"
+    padding-left: 8px
+    padding-right: 8px
+
+  &:hover
+    color: #F16D7F
+
+.filter_menu
+  height: 133px
+  position: relative
+
+.filter_body
+  width: 360px
+  position: absolute
+  margin-top: 39px
+  padding-top: 13px
+  padding-left: 16px
+
+.filter_catalog
+  display: flex
+  flex-direction: column
+
+.filter_descr
+  display: flex
+  justify-content: flex-start
+  align-items: center
+
+.filter_name
+  display: none
+  flex-direction: column
+  background: #FFFFFF
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+  z-index: 1
+
+.filter_catalog:hover .filter_name
+  display: flex
+
+.filter_put
+  padding-right: 10px
+  font-family: Lato
+  font-style: normal
+  font-weight: 600
+  font-size: 14px
+  line-height: 17px
+  color: #000000
+
+.filter_choose
+  padding-top: 51px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.filter_info
+  position: relative
+  display: flex
+
+.filter_info_size
+  padding-right: 28px
+  padding-left: 28px
+
+.filter_text
+  padding-right: 10px
+  font-family: Lato
+  font-style: normal
+  font-weight: 400
+  font-size: 14px
+  line-height: 17px
+
+.filter_size
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  background: #FFFFFF
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+  padding: 8px 30px 8px 8px
+  position: absolute
+  top: 24px
+  left: 28px
+  z-index: 1
+
+details summary
+  &::-webkit-details-marker
+    display: none
+
+  &:after
+    content: url(icons/vector.svg)
+    margin-left: 10px
+
+.slide
+  background: #F7F7F7
+
+.slide_img
+  display: flex
+  justify-content: center
+
+.collection
+  height: 535px
+  position: relative
+  margin-bottom: 129px
+
+.women_collection
+  height: 600px
+  width: 1140px
+  background: #FFF
+  border: 1px solid #EAEAEA
+  position: absolute
+  top: -65px
+  z-index: 1
+
+.wom_col_title
+  margin-top: 65px
+  font-family: Lato
+  font-style: normal
+  font-weight: 300
+  font-size: 14px
+  line-height: 17px
+  color: #F16D7F
+  text-align: center
+
+.wom_col_header
+  margin-top: 27px
+  font-family: Lato
+  font-style: normal
+  font-weight: 300
+  font-size: 18px
+  line-height: 22px
+  color: #4D4D4D
+  text-align: center
+
+.wom_col_descr
+  margin-top: 48px
+  font-family: Lato
+  font-style: normal
+  font-weight: 300
+  font-size: 14px
+  line-height: 17px
+  text-align: center
+  color: #5E5E5E
+
+.wom_col_price
+  margin-top: 32px
+  font-family: Lato
+  font-style: normal
+  font-weight: 300
+  font-size: 24px
+  line-height: 29px
+  color: #EF5B70
+  text-align: center
+
+.wom_col_filter
+  margin-top: 130px
+  margin-left: 372px
+  width: 373px
+  display: flex
+  justify-content: space-between
+  font-family: Lato
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 17px
+  color: #6F6E6E
+
+  &:not(:first-child)::after
+    margin-left: 23px
+
+.wom_col_btn
+  margin-top: 49px
+  margin-left: 465px
+  width: 212px
+  height: 48px
+  border: 1px solid #FF6A6A
+
+.wom_col_cart
+  margin-top: 14px
+  margin-right: 23px
+  background: #EF5B70
+
+.wom_col_add
+  margin-left: 23px
+  font-family: Lato
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 19px
+  color: #F26376
+
+.cart_and_form
+  display: flex
+  justify-content: space-between
+
+.cart
+  display: flex
+  flex-direction: column
+  margin-top: 56px
+
+.shop_cart
+  width: 652px
+  height: 306px
+  margin-top: 40px
+  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13))
+  display: flex
+
+.cart_img
+  height: 100%
+
+.cart_descr
+  width: 390px
+  background: #FFF
+
+.cart_btn
+  margin-top: 73px
+  margin-bottom: 128px
+  display: flex
+  justify-content: space-between
+
+.clear_cart
+  width: 235px
+  height: 50px
+  background: #FFF
+  border: 1px solid #A4A4A4
+  font-family: Lato
+  font-style: normal
+  font-weight: 300
+  font-size: 14px
+  line-height: 17px
+  color: #000000
+
+.cont_shop
+  width: 225px
+  height: 50px
+  background: #FFF
+  border: 1px solid #A4A4A4
+  font-family: Lato
+  font-style: normal
+  font-weight: 300
+  font-size: 14px
+  line-height: 17px
+  color: #000000
+
+.form
+  width: 360px
+  margin-top: 96px
+
+.form_title
+  margin-top: 17px
+  font-family: Lato
+  font-style: normal
+  font-weight: 300
+  font-size: 16px
+  line-height: 19px
+  color: #222222
+
+.form_total
+  height: 214px
+  margin-top: 58px
+  background: #F5F3F3
+  text-align: right
+
+.sub_total
+  padding-top: 39px
+  padding-right: 34px
+
+.grand_total
+  margin-top: 12px
+  padding-right: 34px
+
+.proceed_btn
+  margin-top: 39px
+  text-align: center
+
+.proc_to_check
+  width: 273px
+  height: 50px
+  background: #F16D7F
+  font-family: Lato
+  font-style: normal
+  font-weight: 300
+  font-size: 16px
+  line-height: 19px
+  color: #FFFFFF
+  border: none
