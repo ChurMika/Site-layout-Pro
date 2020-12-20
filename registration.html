@@ -22,57 +22,44 @@
 
     <header class="header_catalog center">
         <div class="header_cat_logo">
-            <p>SHOPPING CART</p>
+            <p>REGISTRATION</p>
         </div>
     </header>
 
-    <section class="cart_and_form center">
-        <div class="cart">
-            <div class="shop_cart">
-                <a href="product.html" class="shop_cart_link"><img src="img/cart/ellery1.jpg" alt="" class="cart_img"></a>
-                <div class="cart_descr">
-                    <h3 class="cart_title">MANGO PEOPLE T-SHIRT</h3>
-                    <p class="cart_line">Price: <strong>$300</strong></p>
-                    <p class="cart_line">Color: Red</p>
-                    <p class="cart_line">Size: Xl</p>
-                    <p class="cart_line">Quantity:</p>
-                </div>
-            </div>
-            <div class="shop_cart">
-                <a href="product.html" class="shop_cart_link"><img src="img/cart/ellery2.jpg" alt="" class="cart_img"></a>
-                <div class="cart_descr">
-                    <h3 class="cart_title">MANGO PEOPLE T-SHIRT</h3>
-                    <p class="cart_line">Price: <strong>$300</strong></p>
-                    <p class="cart_line">Color: Red</p>
-                    <p class="cart_line">Size: Xl</p>
-                    <p class="cart_line">Quantity:</p>
-                </div>
-            </div>
-            <div class="cart_btn">
-                <button class="clear_cart">CLEAR SHOPPING CART</button>
-                <button class="cont_shop">CONTINUE SHOPPING</button>
-            </div>
+    <section class="registration center">
+        <div class="registration_form">
+            <h3 class="registration_header">Your Name</h3>
+            <form action="#">
+                <input type="text" placeholder="First Name" class="registration_input">
+                <input type="text" placeholder="Last Name" class="registration_input">
+                <input type="radio" name="gender" class="registration_check"><label>Male</label>
+                <input type="radio" name="gender" class="registration_check"><label>Female</label>
+            </form>
+            <h3 class="registration_header">Login details</h3>
+            <form action="#">
+                <input type="email" placeholder="Email" class="registration_input">
+                <input type="password" placeholder="Password" class="registration_input">
+                <p class="registration_descr">Please use 8 or more characters, with at least 1 number and 
+                a mixture of uppercase and lowercase letters</p>
+                <button class="registration_btn">JOIN NOW<img src="icons/left.svg" alt="" class="registration_btn_img"></button>
+            </form>
         </div>
-
-        <div class="form">
-            <h2 class="form_title">SHIPPING ADRESS</h2>
-            <div class="ship_addres">
-                <form action="#">
-                    <input type="text" placeholder="Bangladesh" class="form_input">
-                    <input type="text" placeholder="State" class="form_input">
-                    <input type="number" placeholder="Postcode/Zip" class="form_input">
-                    <button class="form_button">GET A QUOTE</button>
-                </form>
-            </div>
-            <div class="form_total">
-                <p class="sub_total">SUB TOTAL $900</p>
-                <p class="grand_total">GRAND TOTAL <strong>$900</strong></p>
-                <div class="proceed_btn">
-                    <button class="proc_to_check">PROCEED TO CHECKOUT</button>
-                </div>
+        <div class="registration_adv">
+            <h2 class="registration_adv_title">LOYALTY HAS ITS PERKS</h2>
+            <p class="registration_adv_text">Get in on the loyalty program where you can 
+            earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <div class="registration_adv_list">
+                <ul class="registration_list">
+                    <li class="registration_adv_li">15% off welcome offer</li>
+                    <li class="registration_adv_li">Free shipping, returns and exchanges on all orders</li>
+                    <li class="registration_adv_li">$10 off a purchase on your birthday</li>
+                    <li class="registration_adv_li">Early access to products</li>
+                    <li class="registration_adv_li">Exclusive offers & rewards</li>
+                </ul>
             </div>
         </div>
     </section>
+
 
     <section class="advantages center">
         <div class="adv_item">

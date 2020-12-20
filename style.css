@@ -85,24 +85,9 @@ h1 {
   color: #222222;
 }
 
-.header_menu {
-  position: absolute;
-  width: 232px;
-  height: 100%;
-  left: 1136px;
-  background: #FFF;
-  display: none;
-}
-
 .header:hover .header_img, .header:hover .header_name {
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
-}
-
-.header:hover .header_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 strong {
@@ -397,6 +382,27 @@ strong {
   padding-top: 30px;
 }
 
+.sub_mail {
+  height: 45px;
+  width: 256px;
+  background: #E1E1E1;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.sub_btn {
+  width: 100px;
+  height: 49px;
+  background: #F16D7F;
+  color: #fff;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.sub_btn:hover {
+  background-color: #e05c6e;
+}
+
 footer {
   height: 79px;
   background: #222224;
@@ -409,6 +415,10 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer .brand {
+  color: #FBFBFB;
 }
 
 .icons {
@@ -615,7 +625,7 @@ details summary::-webkit-details-marker {
   display: none;
 }
 
-details summary:after {
+summary:after {
   content: url(icons/vector.svg);
   margin-left: 10px;
 }
@@ -739,6 +749,10 @@ details summary:after {
   color: #F26376;
 }
 
+.offer_line_prod {
+  margin-bottom: 98px;
+}
+
 .cart_and_form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -768,6 +782,10 @@ details summary:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.shop_cart_link {
+  width: 262px;
 }
 
 .cart_img {
@@ -831,6 +849,39 @@ details summary:after {
   color: #222222;
 }
 
+.form_input {
+  width: 360px;
+  height: 45px;
+  margin-top: 21px;
+  background: #FFFFFF;
+  border: 1px solid #A4A4A4;
+  padding-left: 17px;
+  color: #222222;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.form_input:hover {
+  color: #B1B1B1;
+}
+
+.form_button {
+  margin-top: 24px;
+  width: 101px;
+  height: 34px;
+  border: 1px solid #A4A4A4;
+  color: #4A4A4A;
+  background: #FFFFFF;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+}
+
 .form_total {
   height: 214px;
   margin-top: 58px;
@@ -864,5 +915,107 @@ details summary:after {
   line-height: 19px;
   color: #FFFFFF;
   border: none;
+}
+
+.registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 64px;
+  margin-bottom: 96px;
+}
+
+.registration_form {
+  width: 360px;
+}
+
+.registration_header {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration_input {
+  width: 360px;
+  height: 45px;
+  margin-top: 21px;
+  padding-left: 17px;
+}
+
+.registration_check {
+  margin-top: 32px;
+  margin-bottom: 33px;
+}
+
+.registration_descr {
+  margin-top: 16px;
+  margin-bottom: 39px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration_btn {
+  background: #F16D7F;
+  width: 167px;
+  height: 50px;
+  padding-right: 66px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.registration_adv {
+  width: 652px;
+}
+
+.registration_adv_title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration_adv_text {
+  margin-top: 22px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration_adv_list {
+  margin-top: 5px;
+}
+
+.registration_adv_list .registration_list {
+  list-style-image: url(icons/ok.svg);
+}
+
+.registration_adv_li {
+  margin-left: 23px;
+  margin-top: 16px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */

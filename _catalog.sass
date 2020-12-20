@@ -1,0 +1,115 @@
+.header_catalog
+    height: 148px
+    background: #F8F3F4
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.header_cat_logo
+    font-family: Lato
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 29px
+    color: #F16D7F
+
+.header_cat_menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.header_cat_link
+    font-family: Lato
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: #636363
+    &:not(:last-child)::after
+        content: "/"
+        padding-left: 8px
+        padding-right: 8px
+    &:hover
+        color: #F16D7F
+
+.filter_menu
+    height: 133px
+    position: relative
+
+.filter_body
+    width: 360px
+    position: absolute
+    margin-top: 39px
+    padding-top: 13px
+    padding-left: 16px
+
+.filter_catalog
+    display: flex
+    flex-direction: column
+
+.filter_descr
+    display: flex
+    justify-content: flex-start
+    align-items: center
+
+.filter_name
+    display: none
+    flex-direction: column
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    z-index: 1
+
+.filter_catalog:hover
+    .filter_name
+        display: flex
+
+.filter_put
+    padding-right: 10px
+    font-family: Lato
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+
+.filter_choose
+    padding-top: 51px
+    display: flex
+    justify-content: center
+    align-items: center
+
+.filter_info
+    position: relative
+    display: flex
+
+.filter_info_size
+    padding-right: 28px
+    padding-left: 28px
+
+.filter_text
+    padding-right: 10px
+    font-family: Lato
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 17px
+
+.filter_size
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 8px 30px 8px 8px
+    position: absolute
+    top: 24px
+    left: 28px
+    z-index: 1
+
+details summary::-webkit-details-marker
+    display: none
+
+summary:after
+    content: url(icons/vector.svg)
+    margin-left: 10px
