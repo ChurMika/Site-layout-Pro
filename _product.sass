@@ -26,7 +26,7 @@
     font-weight: 300
     font-size: 14px
     line-height: 17px
-    color: #F16D7F
+    color: $colorSelect
     text-align: center
 
 .wom_col_header
@@ -80,20 +80,23 @@
     width: 212px
     height: 48px
     border: 1px solid #FF6A6A
-
-.wom_col_cart
-    margin-top: 14px
-    margin-right: 23px
-    background: #EF5B70
+    &:hover
+        background: $colorSelect
 
 .wom_col_add
-    margin-left: 23px
     font-family: Lato
     font-style: normal
     font-weight: normal
     font-size: 16px
     line-height: 19px
     color: #F26376
+    display: flex
+    align-items: center
+    justify-content: left
+    margin-top: 14px
+    .wom_col_cart
+        margin-left: 24px
+        margin-right: 23px
 
 .offer_line_prod
     margin-bottom: 98px
