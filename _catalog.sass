@@ -36,16 +36,21 @@
     height: 133px
     position: relative
 
-.filter_body
+.filter_catalog
     width: 360px
     position: absolute
     margin-top: 39px
     padding-top: 13px
     padding-left: 16px
-
-.filter_catalog
     display: flex
     flex-direction: column
+    &:hover
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        z-index: 1
+        width: 344px
+        .filter_name
+            display: flex
 
 .filter_descr
     display: flex
@@ -55,13 +60,24 @@
 .filter_name
     display: none
     flex-direction: column
-    background: #FFFFFF
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
-    z-index: 1
+    summary
+        width: 327px
+        height: 37px
+        margin-top: 24px
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #EF5B70
 
-.filter_catalog:hover
-    .filter_name
-        display: flex
+.filter_link
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
 
 .filter_put
     padding-right: 10px

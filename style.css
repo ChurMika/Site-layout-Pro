@@ -514,15 +514,12 @@ footer .brand {
   position: relative;
 }
 
-.filter_body {
+.filter_catalog {
   width: 360px;
   position: absolute;
   margin-top: 39px;
   padding-top: 13px;
   padding-left: 16px;
-}
-
-.filter_catalog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,6 +527,20 @@ footer .brand {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.filter_catalog:hover {
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  z-index: 1;
+  width: 344px;
+}
+
+.filter_catalog:hover .filter_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .filter_descr {
@@ -550,16 +561,27 @@ footer .brand {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #FFFFFF;
-  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  z-index: 1;
 }
 
-.filter_catalog:hover .filter_name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.filter_name summary {
+  width: 327px;
+  height: 37px;
+  margin-top: 24px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EF5B70;
+}
+
+.filter_link {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
 }
 
 .filter_put {
