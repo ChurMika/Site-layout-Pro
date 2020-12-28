@@ -1,0 +1,31 @@
+*
+    margin: 0
+    padding: 0
+    list-style-type: none
+
+a
+    text-decoration: none
+
+.center
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+
+details summary::-webkit-details-marker
+    display: none
+
+summary:after
+    content: url(../icons/vector.svg)
+    margin-left: 10px
+
+@media (max-width: 768px)
+    .center
+        padding-left: calc(50% - 310px)
+        padding-right: calc(50% - 310px)
+
+@import variables
+@import mixins
+@import main
+@import catalog
+@import product
+@import cart
+@import registration
