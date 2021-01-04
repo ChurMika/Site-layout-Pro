@@ -1,12 +1,12 @@
-nav
+.nav
     height: 75px
     background: #222222
     display: flex
     justify-content: space-between
     align-items: center
-    .nav_search
+    &_search
         padding-left: 41px
-    .nav_acc
+    &_acc
         padding-right: 33px
         padding-left: 34px
 
@@ -160,177 +160,154 @@ strong
     color: #9F9F9F
     text-align: center
 
-.offer_line
+.offer_product
     display: flex
     justify-content: space-between
     padding-bottom: 30px
-
-.offer_bottom_line
-    padding-top: 30px
-    padding-bottom: 48px
-
-.offer_item
-    width: 360px
-    background: #F8F8F8
-    position: relative
-    &:hover
-        .offer_img
-            filter: brightness(50%)
-            transform: scale(1.03)
+    .offer_item
+        width: 360px
+        background: #F8F8F8
+        position: relative
+        &:hover
+            .offer_img
+                filter: brightness(50%)
+                transform: scale(1.03)
+            .offer_add
+                display: flex
         .offer_add
-            display: flex
-
-.offer_add
-    position: absolute
-    top: 188px
-    left: 111px
-    width: 139px
-    height: 44px
-    border: 1px solid white
-    align-items: center
-    justify-content: center
-    display: none
-    font-size: 14px
-    line-height: 17px
-    color: #FFFFFF
-
-.offer_cart
-    padding-right: 11px
-
-.offer_descr
-    padding-top: 25px
-    padding-left: 18px
-
-.offer_name
-    font-family: Lato
-    font-style: normal
-    font-weight: 400
-    font-size: 13px
-    line-height: 16px
-    color: #000000
-
-.offer_text
-    padding-top: 13px
-    padding-bottom: 18px
-    font-family: Lato
-    font-style: normal
-    font-weight: 300
-    font-size: 14px
-    line-height: 17px
-    color: #5D5D5D
-
-.offer_price
-    padding-bottom: 20px
-    font-family: Lato
-    font-style: normal
-    font-weight: 400
-    font-size: 16px
-    line-height: 19px
-    color: $colorSelect
+            position: absolute
+            top: 188px
+            left: 111px
+            width: 139px
+            height: 44px
+            border: 1px solid white
+            align-items: center
+            justify-content: center
+            display: none
+            font-size: 14px
+            line-height: 17px
+            color: #FFFFFF
+            .offer_cart
+                padding-right: 11px
+        .offer_descr
+            padding-top: 25px
+            padding-left: 18px
+            .offer_name
+                font-family: Lato
+                font-style: normal
+                font-weight: 400
+                font-size: 13px
+                line-height: 16px
+                color: #000000
+            .offer_text
+                padding-top: 13px
+                padding-bottom: 18px
+                font-family: Lato
+                font-style: normal
+                font-weight: 300
+                font-size: 14px
+                line-height: 17px
+                color: #5D5D5D
+            .offer_price
+                padding-bottom: 20px
+                font-family: Lato
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 19px
+                color: $colorSelect
 
 .offer_btn
     padding-top: 18px
     padding-bottom: 96px
     text-align: center
-
-.offer_button
-    width: 211px
-    height: 47px
-    border: 1px solid #FF6A6A
-    background: #fff
-    font-family: Lato
-    font-style: normal
-    font-weight: 400
-    font-size: 16px
-    line-height: 19px
-    color: #F26376
-    &:hover
-        color: #3f3e3e
-        background: $colorSelect
+    .offer_button
+        width: 211px
+        height: 47px
+        border: 1px solid #FF6A6A
+        background: #fff
+        font-family: Lato
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        color: #F26376
+        &:hover
+            color: #3f3e3e
+            background: $colorSelect
 
 .advantages
     height: 341px
     background: #222224
     display: flex
     justify-content: space-around
-
-.adv_item
-    padding-top: 103px
-    width: 360px
-    text-align: center
-
-.adv_descr
-    padding-top: 29px
-
-.adv_sales
-    padding-top: 19px
-
-.adv_title
-    padding-bottom: 16px
-    font-family: Lato
-    font-style: normal
-    font-weight: 400
-    font-size: 20px
-    line-height: 24px
-    color: #FBFBFB
-
-.adv_text
-    font-family: Lato
-    font-style: normal
-    font-weight: 300
-    font-size: 14px
-    line-height: 17px
-    text-align: center
-    color: #FBFBFB
+    .adv_item
+        padding-top: 103px
+        width: 360px
+        text-align: center
+        .adv_descr
+            padding-top: 29px
+            .adv_title
+                padding-bottom: 16px
+                font-family: Lato
+                font-style: normal
+                font-weight: 400
+                font-size: 20px
+                line-height: 24px
+                color: #FBFBFB
+            .adv_text
+                font-family: Lato
+                font-style: normal
+                font-weight: 300
+                font-size: 14px
+                line-height: 17px
+                text-align: center
+                color: #FBFBFB
+        .adv_sales
+            padding-top: 19px
 
 .subscribe
     height: 448px
     display: flex
     justify-content: space-between
     align-items: center
-    background: url(img/subscribe.png) no-repeat
-
-.sub_quote
-    width: 360px
-    text-align: center
-
-.sub_descr
-    padding-top: 30px
-
-.sub_email
-    width: 360px
-    text-align: center
-
-.sub_head
-    font-weight: 400
-    font-size: 18px
-
-.sub_form
-    padding-top: 30px
-
-.sub_mail
-    height: 45px
-    width: 256px
-    background: #E1E1E1
-    border-top-left-radius: 25px
-    border-bottom-left-radius: 25px
-    font-family: Lato
-    font-style: normal
-    font-weight: normal
-    font-size: 14px
-    line-height: 17px
-    color: #222224
-    opacity: 0.67
-
-.sub_btn
-    width: 100px
-    height: 49px
-    background: $colorSelect
-    color: #fff
-    border-top-right-radius: 25px
-    border-bottom-right-radius: 25px
-    &:hover
-        background-color: $colorSelect - #111
+    background: url(../img/subscribe.png) no-repeat
+    .sub_quote
+        width: 360px
+        text-align: center
+        .sub_descr
+            padding-top: 30px
+    .sub_email
+        width: 360px
+        text-align: center
+        .sub_head
+            font-weight: 400
+            font-size: 18px
+        .sub_form
+            padding-top: 30px
+            width: 360px
+            .sub_mail
+                height: 46px
+                width: 256px
+                background: #E1E1E1
+                border-top-left-radius: 25px
+                border-bottom-left-radius: 25px
+                font-family: Lato
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 17px
+                color: #222224
+                opacity: 0.67
+            .sub_btn
+                width: 100px
+                height: 49px
+                background: $colorSelect
+                color: #fff
+                border-top-right-radius: 25px
+                border-bottom-right-radius: 25px
+                &:hover
+                    background-color: $colorSelect - #111
 
 footer
     height: 79px
@@ -340,50 +317,18 @@ footer
     align-items: center
     .brand
         color: #FBFBFB
-
-.icons
-    display: flex
-    align-items: center
-
-.icon_link
-    display: block
-    margin-right: 7px
-    width: 32px
-    height: 32px
-    background-color: #fff
-    color: #000
-    text-align: center
-    line-height: 32px
-    &:hover
-        background-color: $colorSelect
-        color: #fff
-
-@media (max-width: 768px)
-    h1
-        font-size: 144px
-        line-height: 53px
-
-    .header_text
-        font-size: 24px
-        line-height: 29px
-
-    .advantages
-        flex-direction: column
-        height: 768px
-        align-items: space-between
-
-    .adv_item
-        padding-top: 48px
-
-    .subscribe
-        height: 693px
+    .icons
         display: flex
-        flex-direction: column
-
-    .sub_mail
-        height: 32px
-        width: 256px
-
-    .sub_btn
-        width: 85px
-        height: 36px
+        align-items: center
+        .icon_link
+            display: block
+            margin-right: 7px
+            width: 32px
+            height: 32px
+            background-color: #fff
+            color: #000
+            text-align: center
+            line-height: 32px
+            &:hover
+                background-color: $colorSelect
+                color: #fff

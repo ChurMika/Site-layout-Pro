@@ -1,121 +1,113 @@
 .slide
     background: #F7F7F7
-
-.slide_img
-    display: flex
-    justify-content: center
+    &_img
+        display: flex
+        justify-content: center
 
 .collection
     height: 535px
     position: relative
     margin-bottom: 129px
-
-.women_collection
-    height: 600px
-    width: 1140px
-    background: #FFF
-    border: 1px solid #EAEAEA
-    position: absolute
-    top: -65px
-    z-index: 1
-
-.wom_col_title
-    margin-top: 65px
-    font-family: Lato
-    font-style: normal
-    font-weight: 300
-    font-size: 14px
-    line-height: 17px
-    color: $colorSelect
-    text-align: center
-    position: relative
-    &::after
-        position: absolute
-        content: ""
-        display: block
-        width: 63px
-        height: 3px
-        background: #EF5B70
-        left: 540px
-        top: 24px
-
-.wom_col_header
-    margin-top: 27px
-    font-family: Lato
-    font-style: normal
-    font-weight: 300
-    font-size: 18px
-    line-height: 22px
-    color: #4D4D4D
-    text-align: center
-
-.wom_col_descr
-    margin-top: 48px
-    font-family: Lato
-    font-style: normal
-    font-weight: 300
-    font-size: 14px
-    line-height: 17px
-    text-align: center
-    color: #5E5E5E
-
-.wom_col_price
-    margin-top: 32px
-    font-family: Lato
-    font-style: normal
-    font-weight: 300
-    font-size: 24px
-    line-height: 29px
-    color: #EF5B70
-    text-align: center
-    position: relative
-    &::after
-        position: absolute
-        content: ""
-        display: block
-        width: 642px
+    .women_collection
+        height: 600px
+        width: 1140px
+        background: #FFF
         border: 1px solid #EAEAEA
-        left: 250px
-        top: 89px
-
-.wom_col_filter
-    margin-top: 130px
-    margin-left: 372px
-    width: 373px
-    display: flex
-    justify-content: space-between
-    font-family: Lato
-    font-style: normal
-    font-weight: normal
-    font-size: 14px
-    line-height: 17px
-    color: #6F6E6E
-    &:not(:first-child)::after
-        margin-left: 23px
-
-.wom_col_btn
-    margin-top: 49px
-    margin-left: 465px
-    width: 212px
-    height: 48px
-    border: 1px solid #FF6A6A
-    &:hover
-        background: $colorSelect
-
-.wom_col_add
-    font-family: Lato
-    font-style: normal
-    font-weight: normal
-    font-size: 16px
-    line-height: 19px
-    color: #F26376
-    display: flex
-    align-items: center
-    justify-content: left
-    margin-top: 14px
-    .wom_col_cart
-        margin-left: 24px
-        margin-right: 23px
-
-.offer_line_prod
-    margin-bottom: 98px
+        position: absolute
+        top: -65px
+        z-index: 1
+        .wom_col_title
+            margin-top: 65px
+            font-family: Lato
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            color: $colorSelect
+            text-align: center
+            position: relative
+            &::after
+                position: absolute
+                content: ""
+                display: block
+                width: 63px
+                height: 3px
+                background: #EF5B70
+                left: 540px
+                top: 24px
+        .wom_col_header
+            margin-top: 27px
+            font-family: Lato
+            font-style: normal
+            font-weight: 300
+            font-size: 18px
+            line-height: 22px
+            color: #4D4D4D
+            text-align: center
+        .wom_col_descr
+            margin-top: 48px
+            font-family: Lato
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            text-align: center
+            color: #5E5E5E
+        .wom_col_price
+            margin-top: 32px
+            font-family: Lato
+            font-style: normal
+            font-weight: 300
+            font-size: 24px
+            line-height: 29px
+            color: #EF5B70
+            text-align: center
+            position: relative
+            &::after
+                position: absolute
+                content: ""
+                display: block
+                width: 642px
+                border: 1px solid #EAEAEA
+                left: 250px
+                top: 89px
+        .wom_col_filter
+            margin-top: 130px
+            margin-left: 372px
+            width: 373px
+            display: flex
+            justify-content: space-between
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 17px
+            color: #6F6E6E
+            &:not(:first-child)::after
+                margin-left: 23px
+        .wom_col_btn
+            margin-top: 49px
+            margin-left: 465px
+            width: 212px
+            height: 48px
+            border: 1px solid #FF6A6A
+            .wom_col_add
+                font-family: Lato
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 19px
+                color: #F26376
+                display: flex
+                align-items: center
+                justify-content: left
+                margin-top: 14px
+                .wom_col_cart
+                    margin-left: 24px
+                    margin-right: 23px
+            &:hover
+                background: $colorSelect
+                .wom_col_add
+                    color: #fff
+                .wom_col_cart
+                    content: url(../icons/product_cart_2.svg)
