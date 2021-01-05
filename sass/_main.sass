@@ -14,7 +14,7 @@
     position: relative
     background: rgba(113, 103, 105, 0.08)
     padding-left: calc(50% - 800px)
-    padding-right: calc(50% - 800px)
+    //padding-right: calc(50% - 800px)
     display: flex
     &_img
         width: 50%
@@ -42,7 +42,7 @@
                 height: 92px
                 background: $colorSelect
                 left: -25px
-        .header_text
+        &_text
             font-family: Lato
             font-style: normal
             font-weight: 700
@@ -163,11 +163,13 @@ strong
 .offer_product
     display: flex
     justify-content: space-between
-    padding-bottom: 30px
+    padding-bottom: 18px
+    flex-wrap: wrap
     .offer_item
         width: 360px
         background: #F8F8F8
         position: relative
+        margin-bottom: 30px
         &:hover
             .offer_img
                 filter: brightness(50%)
@@ -277,6 +279,13 @@ strong
         text-align: center
         .sub_descr
             padding-top: 30px
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 24px
+            color: #222224
+
     .sub_email
         width: 360px
         text-align: center

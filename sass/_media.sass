@@ -1,1 +1,344 @@
-//@media (max-width: 768px)
+@media (max-width: 768px)
+    .center
+        padding-left: calc(50% - 368px)
+        padding-right: calc(50% - 368px)
+
+    .header
+        height: 368px
+        padding-left: 0px
+        h1
+            margin-top: calc(50% - 39px)
+            font-size: 44px
+            line-height: 53px
+        &_text
+            font-size: 24px
+            line-height: 29px
+
+    .catalog
+        padding-top: 19px
+
+    .catalog-big
+        margin-top: 20px
+
+    .offer_heading
+        padding-top: 155px
+
+    .offer_title
+        padding-top: 3px
+        padding-bottom: 73px
+
+    .offer_product
+        padding-bottom: 16px
+        .offer_item
+            margin-bottom: 15px
+            .offer_descr
+                padding-top: 25px
+                padding-left: 18px
+
+    .offer_btn
+        padding-bottom: 65px
+
+    .advantages
+        height: 610px
+        flex-direction: column
+        align-items: center
+        padding-bottom: 64px
+        .adv_item
+            padding-top: 48px
+            .adv_descr
+                padding-top: 29px
+
+    .adv
+        display: none
+
+    .subscribe
+        height: 693px
+        flex-direction: column
+        align-items: center
+        justify-content: normal
+        background: url(../img/subscribe_tablet.png) no-repeat
+        .sub_quote
+            margin-top: 64px
+            .sub_descr
+                height: 99px
+        .sub_email
+            margin-top: 48px
+            .sub_form
+                padding-top: 27px
+
+    .collection
+        height: 601px
+        .women_collection
+            height: 601px
+            width: 100%
+            top: 0px
+
+    .offer_item_third
+        display: none
+
+    .cart_and_form
+        flex-direction: column
+        align-items: center
+        .cart
+            margin-top: 19px
+            .shop_cart
+                width: 734px
+                .cart_descr
+                    width: 472px
+            .cart_btn
+                margin-top: 63px
+                margin-bottom: 65px
+                justify-content: normal
+                .clear_cart
+                    margin-left: calc(50% - 259px)
+                    margin-right: 50px
+        .form
+            width: 100%
+            margin-bottom: 129px
+            margin-top: 0px
+            .form_title
+                margin-top: 0px
+            .form_tablet
+                display: flex
+                justify-content: space-between
+                .ship_addres
+                    width: 360px
+                .form_total
+                    margin-top: 21px
+                    width: 360px
+
+    .registration
+        display: flex
+        justify-content: space-between
+        margin-top: 64px
+        margin-bottom: 96px
+        &_input
+            width: 356px
+        &_adv
+            width: 354px
+            &_title
+                font-size: 16px
+                line-height: 19px
+            &_text
+                margin-top: 32px
+                font-size: 16px
+                line-height: 19px
+            &_list
+                margin-top: 5px
+                .registration_list
+                    list-style-image: url(../icons/ok.svg)
+            &_li
+                font-size: 16px
+                line-height: 19px
+
+@media (max-width: 576px)
+    .center
+        padding-left: calc(50% - 180px)
+        padding-right: calc(50% - 180px)
+
+    .nav_acc, .nav_cart
+        display: none
+
+    .header
+        position: relative
+        background: #F1E4E6
+        padding-left: 0px
+        &_img
+            display: none
+        &_name
+            width: 100%
+            padding-left: calc(50% - 118px)
+            h1
+                margin-top: 148px
+                font-size: 38px
+                line-height: 46px
+                &::before
+                    width: 12px
+                    height: 61px
+                    top: 7px
+            &_text
+                font-size: 20px
+                line-height: 24px
+
+    .catalog
+        flex-direction: column
+        justify-content: normal
+        align-items: center
+        &__item
+            &:not(:last-child)
+                margin-bottom: 32px
+                margin-right: 0px
+
+    .catalog-big
+        margin-top: 32px
+        height: 111px
+        &__img
+            content: url(../img/index/acc_small.png)
+            width: 100%
+
+    .offer_heading
+        padding-top: 64px
+
+    .offer_title
+        padding-top: 3px
+        padding-bottom: 65px
+
+    .offer_product
+        flex-direction: column
+        align-items: center
+
+    .offer_btn
+        padding-top: 26px
+
+    .adv
+        display: none
+
+    .header_catalog
+        flex-direction: column
+        justify-content: normal
+        .header_cat_logo
+            margin-top: 24px
+        .header_cat_menu
+            margin-top: 32px
+
+    .filter_menu
+        height: 81px
+        position: relative
+        .filter_catalog
+            margin-top: 24px
+            padding-top: 0px
+            .filter_descr
+                display: none
+            .filter_small
+                display: block
+        .filter_choose
+            padding-top: 26px
+            justify-content: flex-end
+            .filter_info
+                position: relative
+                display: flex
+                .filter_text
+                    padding-right: 0px
+                    font-size: 12px
+                    line-height: 15px
+                &_size
+                    padding-right: 24px
+                    padding-left: 24px
+
+    .slide
+        height: 624px
+        padding-top: 85px
+        &_img
+            display: none
+        &_small
+            display: block
+
+    .collection
+        height: 600px
+        margin-bottom: 64px
+        .women_collection
+            height: 600px
+            top: 0
+            .wom_col_descr
+                margin-top: 32px
+                line-height: 20px
+            .wom_col_price
+                &::after
+                    width: 175px
+                    left: calc(50% - 87px)
+                    top: 64px
+            .wom_col_filter
+                margin-top: 82px
+                width: 304px
+                font-size: 10px
+                line-height: 12px
+
+    .cart_and_form
+        flex-direction: column
+        .cart
+            margin-top: 2px
+            align-items: center
+            .shop_cart
+                width: 358px
+                height: 188px
+                margin-top: 32px
+                &_link
+                    width: 144px
+                    .cart_img
+                        height: 100%
+                .cart_descr
+                    width: 214px
+                    padding-top: 14px
+                    padding-left: 17px
+                    .cart_cancel
+                        height: 9px
+                        left: calc(100% - 21px)
+                        top: 17px
+                    .cart_title
+                        font-size: 16px
+                        line-height: 19px
+                    .cart_line
+                        font-size: 14px
+                        line-height: 17px
+                        margin-top: 4px
+                    .cart_line_price
+                        margin-top: 26px
+                    .cart_input
+                        width: 24px
+                        height: 15px
+                        font-size: 10px
+                        line-height: 12px
+            .cart_btn
+                margin-top: 30px
+                margin-bottom: 48px
+                width: 100%
+                .clear_cart
+                    width: 175px
+                    height: 33px
+                    font-size: 12px
+                    line-height: 14px
+                    margin-left: calc(50% - 176px)
+                    margin-right: 10px
+                .cont_shop
+                    width: 175px
+                    height: 33px
+                    font-size: 12px
+                    line-height: 14px
+        .form
+            width: 100%
+            margin-top: 0px
+            margin-bottom: 96px
+            .form_title
+                margin-top: 0px
+            .form_tablet
+                display: flex
+                flex-direction: column
+                .form_total
+                    margin-top: 49px
+
+    .registration
+        display: flex
+        justify-content: normal
+        align-items: center
+        flex-direction: column
+        margin-top: 40px
+        &_form
+            width: 354px
+        &_input
+            width: 360px
+        &_adv
+            width: 360px
+            margin-top: 40px
+            &_title
+                font-size: 16px
+                line-height: 19px
+            &_text
+                margin-top: 32px
+                line-height: 19px
+            &_list
+                margin-top: 22px
+                .registration_list
+                    list-style-image: url(../icons/ok.svg)
+            &_li
+                font-size: 16px
+                line-height: 19px
